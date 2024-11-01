@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: cd services/web && docker build --file Dockerfile.prod --tag thermostart:$(date +%s) .
+      run: cd services/web && docker build --file Dockerfile --tag thermostart:1.1-dev .
